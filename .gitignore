@@ -1,0 +1,29 @@
+# Standard sbt ignores
+target/
+src_managed/
+project/boot/
+test-reports/
+*.log*
+.ensime*
+.idea*
+.settings
+.classpath
+.cache
+.project
+*.iml
+
+# IDE files
+.idea
+.idea_modules
+
+.cache-main
+.cache-tests
+
+/bin/
+
+project/project/
+target
+
+*-*.conf
+
+*.jar

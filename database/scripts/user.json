@@ -1,0 +1,15 @@
+[
+  {
+    "name" : "superuser",
+    "email" : "superuser@l2g.com",
+    "requiresMate" : false,
+    "activated" : true
+  },
+  {
+    "name" : "test1",
+    "email" : "test1@l2g.com",
+    "mateName" : "superuser",
+    "requiresMate" : true,
+    "activated" : false
+  }
+]
