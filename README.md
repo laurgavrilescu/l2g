@@ -39,8 +39,8 @@
 
     AUTHENTICATION
      - user can sign up using `auth/signUp` POST route
-        if there is a valid application code, then the user is registered directly (without needing to await for mate permission) and the output of this wil be a token that will expire in an hour
-            (this is how I get the first Permission to log the first User in)
+        if there is a valid application code, then the user is registered directly (without needing to await for mate permission) and the output of this wil be a token that will expire in an hour - token is the AES encryption of the json representation of the authenticator
+            (this is how I get the first Permission to log the first User in - this solution works fine, because can be seen as an application extension and can be used for other special cases)
         if not, then the user is added in the DB but will be active only after the mate approves it
      - user can login using `auth/signIn` POST route
         if the user signed up with activation code, it will get a token that can be further used token that will expire in an hour
@@ -78,5 +78,5 @@
     - improve API - some response code can be refined, also the structure of some JSONs in body
     - add tests - did not add any tests so far, my 8 hours ended :) - testing it properly requires some time (have to create in memory mocks for everything), so I was testing entirely using Swagger API
             all common scenarios worked fine
-    - improve docker compose file to include a container for the application mongodb container for a standalone deploy strategy
+    - improve docker compose file to include a container for the application, depending on mongodb container for a standalone deploy strategy
     - fixed potential bugs that will appear after tests
