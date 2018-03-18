@@ -76,7 +76,6 @@
 4. TO DO:
     - add possibility for token to reside in one of the headers (right now it's on query string - for faster testing)
     - improve API - some response code can be refined, also the structure of some JSONs in body
-    - add tests - did not add any tests so far, my 8 hours ended :) - testing it properly requires some time (have to create in memory mocks for everything), so I was testing entirely using Swagger API
-            all common scenarios worked fine
+    - add tests - all common scenarios work fine using Swagger API
     - improve docker compose file to include a container for the application, depending on mongodb container for a standalone deploy strategy
     - fixed potential bugs that will appear after tests
